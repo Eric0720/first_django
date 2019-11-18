@@ -55,7 +55,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #'DIRS': [os.path.join(BASE_DIR, 'static')]
-         'DIRS': ['C:\\Users\Administrator\PycharmProjects\\first_django\\templates\\admin']
+         'DIRS': ['C:/Users/Administrator/PycharmProjects/first_django/templates/admin/']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -131,5 +131,4 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT=os.path.join(BASE_DIR, '/static/')
 
-#print("==============================",STATIC_ROOT)
 
