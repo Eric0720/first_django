@@ -20,7 +20,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('flink/',include('flink.urls')),
+    path('',include('flink.urls')),
     path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
               #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

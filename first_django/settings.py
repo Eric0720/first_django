@@ -119,8 +119,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),'C:/Users/Administrator/PycharmProjects/first_django/static/']
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, "assets")]
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),'C:/Users/Administrator/PycharmProjects/first_django/static/']
 
 #MEDIA_URL = '/flink/'
 
@@ -128,8 +128,9 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),'C:/Users/Administrator/Pyc
 
 #print("=============================",MEDIA_ROOT)
 
-STATIC_URL = '/static/'
+STATIC_URL = '/assets/'
 
-#STATIC_ROOT=os.path.join(BASE_DIR, '/static/')
-
+STATIC_ROOT=os.path.join(BASE_DIR, 'assets/')
+print(BASE_DIR,"=====================")
+print(STATIC_ROOT)
 
