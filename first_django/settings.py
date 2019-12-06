@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'flink'
 ]
 
 MIDDLEWARE = [
@@ -56,6 +57,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         #'DIRS': [os.path.join(BASE_DIR, 'static')]
          'DIRS': ['C:/Users/Administrator/PycharmProjects/first_django/templates/admin/']
+         #'DIRS': [os.path.join(BASE_DIR, 'templates/admin'),os.path.join(BASE_DIR, 'static/assets').replace('\\', '/')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -119,7 +121,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-#STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"),'C:/Users/Administrator/PycharmProjects/first_django/static/']
 
 #MEDIA_URL = '/flink/'
@@ -128,9 +130,9 @@ USE_TZ = True
 
 #print("=============================",MEDIA_ROOT)
 
-STATIC_URL = '/assets/'
+STATIC_URL = '/static/'
 
-STATIC_ROOT=os.path.join(BASE_DIR, 'static/')
-print(BASE_DIR,"=====================")
-print(STATIC_ROOT)
+#STATIC_ROOT=os.path.join(BASE_DIR, 'static/')
+
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static/assets/global/').replace('\\', '/')
 
